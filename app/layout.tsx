@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   description: "Your trusted e-commerce destination for HVAC interfaces, sensing solutions, and smart automation controllers. Free shipping on orders over ₹40,000.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{

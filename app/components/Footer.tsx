@@ -18,7 +18,7 @@ export default function Footer() {
               </p>
             </div>
             <div className="lg:flex lg:justify-end">
-              <form className="flex w-full max-w-md gap-3">
+              <form className="flex w-full max-w-md flex-col sm:flex-row gap-3">
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -191,9 +191,9 @@ export default function Footer() {
             </p>
 
             {/* Payment Methods */}
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-4">
               <p className="text-xs font-medium text-zinc-500 uppercase">We Accept</p>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap justify-center gap-2">
                 {["visa", "mastercard", "amex", "paypal", "apple-pay"].map((payment) => (
                   <div
                     key={payment}

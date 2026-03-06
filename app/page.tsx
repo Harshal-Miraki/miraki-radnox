@@ -55,13 +55,13 @@ export default function Home() {
       <HeroSection />
 
       {/* Products Section */}
-      <section id="products" className="py-24">
-        <div className="container mx-auto px-6">
-          <div className="mb-16 text-center">
+      <section id="products" className="py-16 md:py-24">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="mb-12 md:mb-16 text-center">
             <p className="mb-4 text-xs font-medium tracking-[0.2em] text-brand-teal uppercase">
               Our Products
             </p>
-            <h2 className="text-4xl font-bold text-zinc-900 lg:text-5xl">
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 lg:text-5xl">
               Featured Solutions
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base font-light text-zinc-500">
@@ -147,9 +147,9 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="border-y border-zinc-100 py-20">
-        <div className="container mx-auto px-6">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <section className="border-y border-zinc-100 py-16 md:py-20">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 icon: (
@@ -203,17 +203,17 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-gradient-to-br from-zinc-50 to-white py-24">
-        <div className="container mx-auto px-6">
-          <div className="mb-16 text-center">
+      <section className="bg-gradient-to-br from-zinc-50 to-white py-16 md:py-24">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="mb-12 md:mb-16 text-center">
             <p className="mb-4 text-xs font-medium tracking-[0.2em] text-brand-teal uppercase">
               Testimonials
             </p>
-            <h2 className="text-4xl font-bold text-zinc-900 lg:text-5xl">
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 lg:text-5xl">
               Loved by Industry Leaders
             </h2>
           </div>
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-6 md:gap-8 sm:grid-cols-2 md:grid-cols-3">
             {[
               {
                 name: "Michael Chen",
@@ -310,16 +310,16 @@ export default function Home() {
       </section> */}
 
       {/* Footer CTA */}
-      <section className="bg-zinc-900 py-20">
-        <div className="container mx-auto px-6">
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-zinc-800 to-zinc-900 p-12 text-center shadow-2xl lg:p-16">
+      <section className="bg-zinc-900 py-16 md:py-20">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-zinc-800 to-zinc-900 p-8 md:p-12 text-center shadow-2xl lg:p-16">
             <div className="absolute -left-32 -top-32 h-64 w-64 rounded-full bg-brand-teal/10 blur-3xl"></div>
             <div className="absolute -bottom-32 -right-32 h-64 w-64 rounded-full bg-cyan-500/10 blur-3xl"></div>
             <div className="relative">
-              <h2 className="mb-4 text-3xl font-bold text-white lg:text-4xl">
+              <h2 className="mb-4 text-2xl md:text-3xl font-bold text-white lg:text-4xl">
                 Ready to Upgrade Your System?
               </h2>
-              <p className="mb-10 text-base font-light text-zinc-400">
+              <p className="mb-8 md:mb-10 text-sm md:text-base font-light text-zinc-400">
                 Browse our complete catalog of 500+ products and find the perfect solution for your needs.
               </p>
               <Link

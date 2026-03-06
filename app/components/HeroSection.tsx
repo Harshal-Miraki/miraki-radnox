@@ -119,29 +119,29 @@ export default function HeroSection() {
                     </div>
 
                     {/* Title */}
-                    <h1 className="mb-4 text-4xl font-semibold leading-tight lg:text-6xl">
+                    <h1 className="mb-4 text-3xl font-semibold leading-tight md:text-4xl lg:text-6xl">
                       {slide.title}
                     </h1>
 
                     {/* Subtitle */}
-                    <p className="mb-6 text-base font-light leading-relaxed text-white/90 lg:text-lg">
+                    <p className="mb-6 text-sm font-light leading-relaxed text-white/90 md:text-base lg:text-lg">
                       {slide.subtitle}
                     </p>
 
                     {/* Price */}
-                    <div className="mb-8 flex items-center gap-4">
-                      <span className="text-4xl font-bold text-white">{slide.price}</span>
-                      <span className="text-xl font-light text-white/60 line-through">{slide.originalPrice}</span>
+                    <div className="mb-8 flex items-center gap-3 md:gap-4 flex-wrap">
+                      <span className="text-3xl md:text-4xl font-bold text-white">{slide.price}</span>
+                      <span className="text-lg md:text-xl font-light text-white/60 line-through">{slide.originalPrice}</span>
                       <span className="rounded-full bg-green-500 px-3 py-1 text-xs font-semibold text-white">
                         Save ₹{(parseInt(slide.originalPrice.replace(/[₹,]/g, '')) - parseInt(slide.price.replace(/[₹,]/g, ''))).toLocaleString('en-IN')}
                       </span>
                     </div>
 
                     {/* CTA Buttons */}
-                    <div className="flex flex-wrap gap-4">
+                    <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4">
                       <Link
                         href={slide.link}
-                        className="group inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-zinc-900 shadow-lg transition-all hover:bg-brand-teal hover:text-white hover:shadow-xl active:scale-95"
+                        className="group inline-flex w-full sm:w-auto items-center justify-center rounded-full bg-white px-6 py-3 md:px-8 md:py-4 text-sm font-semibold text-zinc-900 shadow-lg transition-all hover:bg-brand-teal hover:text-white hover:shadow-xl active:scale-95"
                       >
                         {slide.cta}
                         <svg className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -149,8 +149,8 @@ export default function HeroSection() {
                         </svg>
                       </Link>
                       <Link
-                        href="/products"
-                        className="inline-flex items-center justify-center rounded-full border-2 border-white/50 bg-white/10 px-8 py-4 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20 active:scale-95"
+                        href="#"
+                        className="inline-flex w-full sm:w-auto items-center justify-center rounded-full border-2 border-white/50 bg-white/10 px-6 py-3 md:px-8 md:py-4 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20 active:scale-95"
                       >
                         View All Products
                       </Link>
@@ -165,19 +165,19 @@ export default function HeroSection() {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-3 text-zinc-700 shadow-lg backdrop-blur-sm transition-all hover:scale-110 hover:bg-white"
+          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 md:p-3 text-zinc-700 shadow-lg backdrop-blur-sm transition-all hover:scale-110 hover:bg-white"
           aria-label="Previous slide"
         >
-          <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="h-4 w-4 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-3 text-zinc-700 shadow-lg backdrop-blur-sm transition-all hover:scale-110 hover:bg-white"
+          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 md:p-3 text-zinc-700 shadow-lg backdrop-blur-sm transition-all hover:scale-110 hover:bg-white"
           aria-label="Next slide"
         >
-          <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="h-4 w-4 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
@@ -208,8 +208,8 @@ export default function HeroSection() {
 
       {/* Trust Badges Bar */}
       <div className="border-b border-zinc-100 bg-white py-8">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:grid-cols-4">
             <div className="flex items-center justify-center gap-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-teal/10">
                 <svg className="h-6 w-6 text-brand-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
