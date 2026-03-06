@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --brand-teal: #00A499;
+  --brand-teal-dark: #007D75;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-teal: var(--brand-teal);
+  --color-brand-teal-dark: var(--brand-teal-dark);
+  --font-sans: 'Montserrat', system-ui, -apple-system, sans-serif;
+  --font-display: 'Montserrat', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* Typography Utilities */
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.font-black { font-weight: 900; }
+
+/* Wavy Curve Line Pattern */
+.bg-curve-lines {
+  background-image: url("data:image/svg+xml,%3Csvg width='800' height='800' viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 100 Q 200 50 400 100 T 800 100 M0 150 Q 200 100 400 150 T 800 150 M0 200 Q 200 150 400 200 T 800 200 M0 250 Q 200 200 400 250 T 800 250 M0 300 Q 200 250 400 300 T 800 300 M0 350 Q 200 300 400 350 T 800 350 M0 400 Q 200 350 400 400 T 800 400 M0 450 Q 200 400 400 450 T 800 450 M0 500 Q 200 450 400 500 T 800 500 M0 550 Q 200 500 400 550 T 800 550 M0 600 Q 200 550 400 600 T 800 600 M0 650 Q 200 600 400 650 T 800 650' stroke='%2300A499' stroke-width='0.5' fill='none' opacity='0.2'/%3E%3C/svg%3E");
+  background-size: 800px 800px;
+}
+
+.clip-diagonal-left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+}
+
+.clip-diagonal-right {
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+}
+
+.clip-brochure-hero {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+}
