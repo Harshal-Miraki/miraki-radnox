@@ -188,16 +188,18 @@ export default function Footer() {
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <p className="text-xs font-medium text-zinc-500 uppercase">We Accept</p>
               <div className="flex flex-wrap justify-center gap-2">
-                {["visa", "mastercard", "amex", "paypal", "apple-pay"].map((payment) => (
+                {["visa", "mastercard", "amex", "paypal", "xdc", "upi", "rupay"].map((payment) => (
                   <div
                     key={payment}
-                    className="flex h-8 w-12 items-center justify-center rounded bg-zinc-800 text-xs font-medium text-zinc-400"
+                    className="flex h-8 w-auto px-2 items-center justify-center rounded bg-zinc-800 text-xs font-medium text-zinc-400"
                   >
                     {payment === "visa" && "VISA"}
                     {payment === "mastercard" && "MC"}
                     {payment === "amex" && "AMEX"}
                     {payment === "paypal" && "PP"}
-                    {payment === "apple-pay" && ""}
+                    {payment === "xdc" && "XDC"}
+                    {payment === "upi" && "UPI"}
+                    {payment === "rupay" && "RuPay"}
                   </div>
                 ))}
               </div>

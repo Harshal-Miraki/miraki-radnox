@@ -203,7 +203,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-gradient-to-br from-zinc-50 to-white py-16 md:py-24">
+      {/* <section className="bg-gradient-to-br from-zinc-50 to-white py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-12 md:mb-16 text-center">
             <p className="mb-4 text-xs font-medium tracking-[0.2em] text-brand-teal uppercase">
@@ -272,7 +272,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Newsletter Section */}
       {/* <section className="relative overflow-hidden py-24">
