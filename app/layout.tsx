@@ -8,6 +8,9 @@ import { CartProvider } from "./contexts/CartContext";
 export const metadata: Metadata = {
   title: "Miraki Radnox | Shop Advanced Sensing & HVAC Solutions",
   description: "Your trusted e-commerce destination for HVAC interfaces, sensing solutions, and smart automation controllers. Free shipping on orders over ₹40,000.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export const viewport = {
