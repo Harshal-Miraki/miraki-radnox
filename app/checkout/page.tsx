@@ -97,9 +97,9 @@ Please confirm this order. Thank you!`;
 
     // Clear the cart after sending the order
     clearCart();
-    
+
     setIsProcessing(false);
-    
+
     // Redirect to home page after successful order
     router.push("/");
   };
@@ -134,7 +134,7 @@ Please confirm this order. Thank you!`;
                       onChange={(e) => setShipping({ ...shipping, firstName: e.target.value })}
                       className={`w-full rounded-xl border px-4 py-3 text-zinc-900 focus:outline-none focus:ring-2 ${errors.firstName ? "border-red-500 focus:ring-red-200" : "border-zinc-200 focus:ring-brand-teal/20"
                         }`}
-                      placeholder="John"
+                      placeholder="Enter First Name"
                     />
                     {errors.firstName && <p className="mt-1 text-xs font-light text-red-500">{errors.firstName}</p>}
                   </div>
@@ -146,7 +146,7 @@ Please confirm this order. Thank you!`;
                       onChange={(e) => setShipping({ ...shipping, lastName: e.target.value })}
                       className={`w-full rounded-xl border px-4 py-3 text-zinc-900 focus:outline-none focus:ring-2 ${errors.lastName ? "border-red-500 focus:ring-red-200" : "border-zinc-200 focus:ring-brand-teal/20"
                         }`}
-                      placeholder="Doe"
+                      placeholder="Enter Last Name"
                     />
                     {errors.lastName && <p className="mt-1 text-xs font-light text-red-500">{errors.lastName}</p>}
                   </div>
@@ -161,7 +161,7 @@ Please confirm this order. Thank you!`;
                       onChange={(e) => setShipping({ ...shipping, email: e.target.value })}
                       className={`w-full rounded-xl border px-4 py-3 text-zinc-900 focus:outline-none focus:ring-2 ${errors.email ? "border-red-500 focus:ring-red-200" : "border-zinc-200 focus:ring-brand-teal/20"
                         }`}
-                      placeholder="john@example.com"
+                      placeholder="Enter Email"
                     />
                     {errors.email && <p className="mt-1 text-xs font-light text-red-500">{errors.email}</p>}
                   </div>
@@ -173,7 +173,7 @@ Please confirm this order. Thank you!`;
                       onChange={(e) => setShipping({ ...shipping, phone: e.target.value })}
                       className={`w-full rounded-xl border px-4 py-3 text-zinc-900 focus:outline-none focus:ring-2 ${errors.phone ? "border-red-500 focus:ring-red-200" : "border-zinc-200 focus:ring-brand-teal/20"
                         }`}
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 Enter mobile number"
                     />
                     {errors.phone && <p className="mt-1 text-xs font-light text-red-500">{errors.phone}</p>}
                   </div>
@@ -187,7 +187,7 @@ Please confirm this order. Thank you!`;
                     onChange={(e) => setShipping({ ...shipping, address: e.target.value })}
                     className={`w-full rounded-xl border px-4 py-3 text-zinc-900 focus:outline-none focus:ring-2 ${errors.address ? "border-red-500 focus:ring-red-200" : "border-zinc-200 focus:ring-brand-teal/20"
                       }`}
-                    placeholder="123 Main St, Apt 4B"
+                    placeholder="Street, City, State, PIN"
                   />
                   {errors.address && <p className="mt-1 text-xs font-light text-red-500">{errors.address}</p>}
                 </div>
